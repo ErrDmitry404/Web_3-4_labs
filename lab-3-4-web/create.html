@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>web-labs-(3-4)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><b>BANK ASSOCIATION</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Show List of all Banks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Create bank</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input id="find_input" type="text" class="form-control input-lg mr-sm-2"/>
+
+        <button id="find_button" type="button" class="btn btn-lg btn-dark mr-2 my-2 my-sm-0">
+          Search
+        </button>
+        <button id="cancel_find_button " type="button" class="btn btn-lg btn-outline-danger mr-2 my-2 my-sm-0">
+          Cancel
+        </button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+     
+      </div>
+    <div class="col-sm">
+      <br>
+      <br>
+      <br>
+      <h5>CREATE BANK</h5>
+      <br>
+      <form>
+        <div class="form-group">
+          <label for="inputEmail">Name</label>
+          <input type="text" class="form-control" id="name_input" placeholder="Input name">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Maximum client number</label>
+          <input type="text" class="form-control" id="client_number_input" placeholder="Input client number">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword">Number of credit cards</label>
+          <input type="text" class="form-control" id="credit_number_input" placeholder="Input credit card number">
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg" id="submit_button">Create</button>
+        <br>
+        <br>
+      </div>
+    <div class="col-sm">
+     
+    </div>
+      </div>
+    </div>
+      
+      
+          <!-- modules are used for imports/exports in js files -->
+      <script type="module" src="./js/index.js"></script>
+  </div>
+</body>
+
+</html>
